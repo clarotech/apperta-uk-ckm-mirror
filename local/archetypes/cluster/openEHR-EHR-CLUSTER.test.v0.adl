@@ -55,6 +55,35 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- MyQuantity
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::124]>
+						list = <
+							["1"] = <
+								units = <"dg">
+								magnitude = <|2.0..12.0|>
+								precision = <|1|>
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"dg">
+							>
+							["2"] = <
+								units = <"g">
+								magnitude = <|>122.0..<1123.0|>
+								precision = <|2|>
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"g">
+							>
+						>
+
+						assumed_value = <
+							units = <"dg">
+							magnitude = <6.0>
+							precision = <1>
+						>
+					>
+				}
+			}
 		}
 	}
 
@@ -83,6 +112,21 @@ ontology
 				["at0005"] = <
 					text = <"parse">
 					description = <"">
+				>
+				["at0006"] = <
+					text = <"MyQuantity">
+					description = <"wee">
+					comment = <"wewe">
+					XYZ = <"TEST-XYZ">
+					ABC = <"TEST-ABC">
+				>
+				["g"] = <
+					text = <"myGram">
+					description = <"gram">
+				>
+				["dg"] = <
+					text = <"decideci">
+					description = <"decigram">
 				>
 			>
 		>
